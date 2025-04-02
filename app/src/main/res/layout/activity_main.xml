@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AC9AB4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtSuggest"
+        android:layout_width="402dp"
+        android:layout_height="74dp"
+        android:textColor="#545408"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665" />
+
+    <Button
+        android:id="@+id/btnSuggest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="144dp"
+        android:text="Suggest a meal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="144dp"
+        android:text="Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="316dp"
+        android:fontFamily="@font/asset"
+        android:lineSpacingExtra="10sp"
+        android:text="Meal plan"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="34sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/txtSuggest"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#070101"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtSuggest"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="403dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="92dp"
+        android:fontFamily="@font/asset"
+        android:text="Enter time of the day:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#040305"
+        app:layout_constraintBottom_toTopOf="@+id/edtTime"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTime2"
+        android:layout_width="395dp"
+        android:layout_height="99dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="48dp"
+        android:text="Time options: morning, mid morning, afternoon, mid afternoon, dinner and after dinner."
+        android:textAlignment="textStart"
+        android:textColor="#020000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtSuggest"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
